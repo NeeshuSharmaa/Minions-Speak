@@ -7,31 +7,69 @@
     <title>Banana Speak</title>
     <script src="app.js" type="text/javascript" defer></script>
     <style>
+       @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&display=swap');
+        body {
+            height: 100vh;
+            background-image: url("images/minionbg.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1{
+            font-family: 'Open Sans', sans-serif;
+            padding:2rem;
+            color:white;
+        }
         textarea {
             width:80% ;
             height: 10vh;
             display: block ;
             margin: 1rem;
             padding: 2rem;
+            border-radius:4rem;
+            background-color: #f1f18d1f;
+            color:white;
+            font-size: 1rem;
+        }
+        #txt-input {
+            align-content: center;
+        }
+        #btn-translate {
+            border-radius: 1.5rem;
+            border: 0.5px solid #335137 ;
+            background-color: white;
+            padding:0.5rem;
+            margin:2rem;
+            font-size: 1rem;
+            color: #335137;
+            
         }
         #output {
-            border: 1px solid black;
-            width:80% ;
+            border: 1px solid grey;
             height: 10vh;
+            width:80%;
             display: block ;
-            margin: 1rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            margin-top:1rem;
             padding: 2rem;
+            border-radius: 4rem;
+            background-color: #f1f18d1f;
+            text-align: left;
+            color: white;
+            font-family: 'Open Sans', sans-serif;
         }
     </style>
 </head>
 <body>
-    <h1>talk Banana</h1>
-    <textarea
-    id="txt-input"
-    placeholder="put your sentence in english here, we will convert it to banana"></textarea>
-    <button id="btn-translate">click me</button>
-    <div style="font-size: larger;">Output will come here 👇🏻</div>
-    <div id="output"></div>
+    <center>
+        <h1>Welcome to MINIONS speak</h1>
+        <textarea
+        id="txt-input" 
+        placeholder="put your sentence in english here, we will convert it to minions language ;)"></textarea>
+        <button id="btn-translate"><strong>click me</strong></button>
+        <div id="output"></div>
+    </center>   
+    
 
     <!-- <script src="app.js" type="text/javascript"></script> -->
 </body>
